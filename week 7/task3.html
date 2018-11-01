@@ -3,27 +3,40 @@
 
   <head>
     <style>
-      #cards .card{
+        #cards .card{
         border:1px solid red;
         display:flex;
         width:300px;
-      }
-      #cards .card .title{
+    }
+    #cards .card .title{
         flex-grow: 1;
-      }
-      #cards .card .price{
+    }
+    #cards .card .price{
         font-weight: bold;
         padding-right: 20px;
-      }
-      #loading{
+    }
+    #loading{
         display: none;
-      }
-      #cards{
+    }
+    #cards{
         width:300px;
         height:200px;
         border: 1px solid blue;
-      }
-    </style>
+    }
+    p{
+        margin: 0;
+        padding: 0;
+    }
+    .item span{
+        margin-right: 30px;
+        font-weight: bold;
+    }
+    .item{
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid red;
+    }
+  </style>
 
   </head>
 
