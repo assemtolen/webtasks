@@ -28,3 +28,4 @@ for (var i = 0; i < count.length; i++) {
     }
 }
 console.log("Ancient: "+min)
+
