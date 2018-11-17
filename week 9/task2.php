@@ -3,17 +3,17 @@
 
 <?php
 	$news = ["sport"=>["C. Ronaldo has scored three goals in last five matches","Golovkin has won match for title"],"politics"=>["Trump has cancelled his visit to North Corea, because of sanction","N. Nazarbayev has approved new version of alphabet"]];
-	$cat = $_REQUEST["category"];
+	$c = $_REQUEST["category"];
 	$js = "";		
 	if(isset($_REQUEST["format"])){
 		$js = $_REQUEST["format"];
 	}
 	if($js = "json"){
-		echo json_encode($news[$cat]); //json_encode — Returns the JSON representation of a value
+		echo json_encode($news[$c]);
 
 	} else {
-		echo $news[$cat][0], "<br/>";
-		echo $news[$cat][1];
+		echo $news[$c][0], "<br/>";
+		echo $news[$c][1];
 	}
 
 ?>

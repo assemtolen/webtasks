@@ -71,7 +71,6 @@ for($i=0;$i<sizeof($cars);$i++){
         echo "<br/><br/><br/>";
     }
 }
-/* Write your code here */
 ?>
 </div>
 <div class="menu">
