@@ -13,11 +13,11 @@
             setcookie('basket', serialize($cook_arr), time()+10000, '/');
         }
         $arr = [1=>"<strong>Mercedes C 100</strong>", 2=>"<strong>Toyota Camry 50</strong>", 3=>"<strong>Daewoo Nexia</strong>"];
-        $qqq = array();
+        $aR = array();
         $arr_of_ids = array();
         if(isset($_COOKIE['basket'])){
-            $qqq = unserialize($_COOKIE['basket']);
-            $arr_of_ids = $qqq;
+            $aR = unserialize($_COOKIE['basket']);
+            $arr_of_ids = $aR;
         }
         for($i = 0; count($arr_of_ids) > $i;$i++){
             $arr_of_ids[$i] = (int)$arr_of_ids[$i];
@@ -35,7 +35,8 @@
                 echo $arr[$q]." <a href = 'addBasket.php?id=$q'>Add to basket</a><br>";
             }
         }
-        echo "<br><br><br>In Basket: ".count($qqq)
+        echo "<br><h1>In Basket </h1>";
+        echo "Items: ".count($aR);
     ?>
     
 </body>
